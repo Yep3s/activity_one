@@ -2,6 +2,7 @@ package Empleado;
 
 public class Empleado {
  
+    private String nombre;
     private int cedula;
     private int sueldoBase;
     private int valorHorasExtras;
@@ -18,6 +19,8 @@ public class Empleado {
     }
 
     public void informacionBasica(){
+        
+        System.out.println("El Nombre Del Empleado Es: " +  getNombre() );
         System.out.println("La Cedula Del Empleado Es: " + getCedula());
         System.out.println("El Estado Civil Del Empleado Es: " + getEstadoCivil());
         if(getNumeroDeHijos() == 0){
@@ -75,6 +78,14 @@ public class Empleado {
 
     public void setNumeroDeHijos(int numeroDeHijos) {
         this.numeroDeHijos = numeroDeHijos;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
     
     
