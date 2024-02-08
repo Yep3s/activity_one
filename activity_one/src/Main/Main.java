@@ -14,7 +14,7 @@ public class Main {
         worker.setNombre(teclado.nextLine());
 
         System.out.println("Ingresa El Estado Civil Del Empleado: ");
-        worker.setEstadoCivil(teclado.nextLine());
+        worker.setEstadoCivil(teclado.nextLine().toLowerCase());
 
         System.out.println("Ingresa La Cedula Del Empleado: ");
         worker.setCedula(teclado.nextInt());
