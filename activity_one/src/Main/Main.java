@@ -22,7 +22,16 @@ public class Main {
         System.out.println("Ingresa La Cantidad De Hijos Del Empleado: ");
         worker.setNumeroDeHijos(teclado.nextInt());
 
-        worker.informacionBasica();
+        System.out.println("Ingresa El Sueldo Base Del Empleado: ");
+        worker.setSueldoBase(teclado.nextInt());
+
+        System.out.println("Ingresa La Cantidad De Horas Extras Trabajadas En El Mes Por El Empleado: ");
+        worker.setCantidadHorasExtras(teclado.nextInt());
+
+        System.out.println("Ingresa El Valor Pagado Al Empleado Por Cada Hora Extra: ");
+        worker.setValorHorasExtras(teclado.nextInt());
+
+        worker.informacionCompleta();
 
     }
 
